@@ -324,7 +324,7 @@ export const updateTransaction = async (
       },
       { $set: updates },
       {
-        new: true,
+        returnDocument: "after",
         runValidators: true,
       }
     );

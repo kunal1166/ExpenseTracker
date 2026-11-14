@@ -233,7 +233,7 @@ export const updateMyProfile = async (
       req.userId,
       { name: name.trim() },
       {
-        new: true,
+        returnDocument: "after",
         runValidators: true,
       }
     );
@@ -440,7 +440,7 @@ export const updateMyPreferences = async (
         },
       },
       {
-        new: true,
+        returnDocument: "after",
         runValidators: true,
       }
     );
@@ -470,3 +470,4 @@ export const updateMyPreferences = async (
     });
   }
 };
+

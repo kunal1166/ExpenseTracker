@@ -180,7 +180,7 @@ export const updateBudget = async (
         $set: { amount },
       },
       {
-        new: true,
+        returnDocument: "after",
         runValidators: true,
       }
     );

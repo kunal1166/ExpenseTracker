@@ -1,3 +1,4 @@
+
 {
   "name": "client",
   "private": true,
@@ -5,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

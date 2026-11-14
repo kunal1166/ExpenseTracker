@@ -265,7 +265,7 @@ export const updateCategory = async (
     const category = await Category.findOneAndUpdate(
       { _id: id, userId },
       { $set: updates },
-      { new: true, runValidators: true }
+      { returnDocument: "after", runValidators: true }
     );
 
     if (!category) {
@@ -400,3 +400,4 @@ export const deleteCategory = async (
     });
   }
 };
+

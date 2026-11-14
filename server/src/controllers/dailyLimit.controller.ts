@@ -36,7 +36,7 @@ export const setDailyLimit = async (
       { userId: req.userId },
       { $set: { amount } },
       {
-        new: true,
+        returnDocument: "after",
         upsert: true,
         runValidators: true,
         setDefaultsOnInsert: true,
@@ -150,3 +150,4 @@ export const getDailyLimit = async (
     });
   }
 };
+
