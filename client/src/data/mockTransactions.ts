@@ -1,0 +1,68 @@
+import type { Transaction } from "../types/transaction";
+
+export const mockTransactions: Transaction[] = [
+  {
+    id: "1",
+    title: "Monthly Salary",
+    amount: 35000,
+    type: "income",
+    category: "Salary",
+    date: "2026-10-03",
+  },
+  {
+    id: "2",
+    title: "Grocery Shopping",
+    amount: 1800,
+    type: "expense",
+    category: "Food",
+    date: "2026-10-05",
+  },
+  {
+    id: "3",
+    title: "Electricity Bill",
+    amount: 1200,
+    type: "expense",
+    category: "Bills",
+    date: "2026-10-07",
+  },
+  {
+    id: "4",
+    title: "Freelance Project",
+    amount: 5000,
+    type: "income",
+    category: "Freelance",
+    date: "2026-10-09",
+  },
+  {
+    id: "5",
+    title: "Bus and Metro",
+    amount: 450,
+    type: "expense",
+    category: "Transport",
+    date: "2026-10-12",
+  },
+  {
+    id: "6",
+    title: "Restaurant",
+    amount: 750,
+    type: "expense",
+    category: "Food",
+    date: "2026-10-15",
+  },
+  {
+    id: "7",
+    title: "Internet Bill",
+    amount: 700,
+    type: "expense",
+    category: "Bills",
+    date: "2026-10-18",
+  },
+  {
+    id: "8",
+    title: "Online Course",
+    amount: 1500,
+    type: "expense",
+    category: "Education",
+    date: "2026-10-20",
+  },
+];
