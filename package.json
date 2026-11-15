@@ -1,0 +1,13 @@
+﻿{
+  "name": "expensetracker",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=client -- --host 0.0.0.0",
+    "start": "npm run dev --workspace=client -- --host 0.0.0.0",
+    "build": "npm run build --workspace=client"
+  }
+}
